@@ -1,6 +1,6 @@
 import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js';
-import hoverEffect from 'hover-effect'
+
 
 const bg = document.querySelector("section.bg");
 // initializing objects to the page
@@ -36,14 +36,6 @@ particleGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
 const particleMesh = new THREE.Points(particleGeo, particleMaterial);
 scene.add(particleMesh);
 
-
-var hoverDistort = new hoverEffect({
-    parent: document.querySelector('.pic-wrapper'),
-    intensity: 0.3,
-    image1: 'images/pic1.jpg',
-    image2: 'images/pic2.jpg',
-    displacementImage: 'images/4.png'
-});
 
 
 // mouse detection
