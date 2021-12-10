@@ -1,6 +1,4 @@
 import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js';
-import { OrbitControls } from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js';
-
 
 const bg = document.querySelector("section.bg");
 // initializing objects to the page
@@ -14,7 +12,6 @@ renderer.setSize(innerWidth,innerHeight)
 renderer.setPixelRatio(devicePixelRatio)
 renderer.setClearColor(new THREE.Color('#21282a'), 1)
 bg.appendChild(renderer.domElement)
-//new OrbitControls(camera, renderer.domElement)
 camera.position.z = 2500
 
 //lighting of the scene
@@ -58,17 +55,6 @@ const tick = () =>
     window.requestAnimationFrame(tick)
     renderer.render(scene, camera)
     frame += 0.01
-    
-    /* this is if mouse hover is affected by time
-    
-    const elapsedTime = clock.getElapsedTime()
-    console.log(elapsedTime)
-    particleMesh.rotation.y = -.1 * elapsedTime
-    if (mouseX > 0){
-        particleMesh.rotation.y = -mouseX * (elapsedTime * 0.00008)
-        particleMesh.rotation.x = mouseY * (elapsedTime * 0.00008)
-    }
-    */
     particleMesh.rotation.y -= 0.002
     particleMesh.rotation.z = -mouseX * (3 * 0.00008)
     particleMesh.rotation.x = mouseY * (3 * 0.00008)
