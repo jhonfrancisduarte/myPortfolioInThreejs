@@ -2,7 +2,7 @@ import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js";
 import * as status from 'https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js';
-import { GLBufferAttribute } from 'three';
+import { GLBufferAttribute } from "https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js";
 
 const myHead = document.querySelector("div.my-head");
 // initializing objects to the page
