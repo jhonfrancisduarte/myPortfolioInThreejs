@@ -4,6 +4,7 @@ import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/
 import * as status from 'https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js';
 import { GLBufferAttribute } from "https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js";
 
+
 const myHead = document.querySelector("div.my-head");
 // initializing objects to the page
 const raycaster = new THREE.Raycaster()
