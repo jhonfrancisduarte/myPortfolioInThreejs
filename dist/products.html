@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head><title>works</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/png" href="./logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/works.css">
+    <script type="module" src="./works.js"></script>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="./logo2.png" height="60">
+      </div>
+ 
+    <div class="navigator">
+            <ul>
+                <li class="list">
+                    <a href="index.html">
+                      <span class="icon"><ion-icon name="home-outline"></ion-icon>
+                          <span class="title"><p>Home</p></span>
+                      </span>
+                        
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="profile.html">
+                      <span class="icon"><ion-icon name="person-outline"></ion-icon>
+                          <span class="title2"><p>About Me</p></span>
+                      </span>
+                        
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="skills.html">
+                      <span class="icon"><ion-icon name="code-working-outline"></ion-icon>
+                          <span class="title3"><p>Skills</p></span>
+                      </span>
+                        
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="products.html">
+                      <span class="icon"><ion-icon name="albums-outline"></ion-icon>
+                          <span class="title4"><p>Works</p></span>
+                      </span>
+                        
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="contact.html">
+                      <span class="icon"><ion-icon name="mail-outline"></ion-icon>
+                          <span class="title5"><p>Contact</p></span>
+                      </span>
+                        
+                    </a>
+                </li>
+            </ul>
+    </div>
+
+    <div class="planeBG"></div>
+
+    <div class="blender">
+        <p>Go to Blender Works</p>
+        <a href="./blenderWorks.html"><h4>Blender</h4></a>
+    </div>
+<script>
+    let list = document.querySelectorAll('.list');
+    for (let i=0; i<list.length; i++){
+        list[i].onclick = function(){
+            let j = 0;
+            while(j < list.length){
+                list[j++].className = 'list';
+            }
+            list[i].className = 'list active';
+        }
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

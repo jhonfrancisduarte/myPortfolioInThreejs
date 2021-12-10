@@ -1,0 +1,173 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Light",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                4.857417106628418,
+                14.984759330749512,
+                6.744912147521973
+            ]
+        },
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.6868229508399963,
+                -0.003222424304112792,
+                0.0030451470520347357,
+                0.7268112301826477
+            ],
+            "translation" : [
+                0.17939555644989014,
+                10.637778282165527,
+                39.277320861816406
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Torus",
+            "rotation" : [
+                0,
+                0.7071068286895752,
+                -0.7071068286895752,
+                -1.1520232590100932e-07
+            ],
+            "scale" : [
+                6.594662666320801,
+                -1.3969372510910034,
+                6.594662666320801
+            ]
+        },
+        {
+            "name" : "Light.001",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                2.664346218109131,
+                15.573202133178711,
+                -9.836504936218262
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.5223047137260437,
+                    0.5066592693328857,
+                    0.5382240414619446,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Torus",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 4190,
+            "max" : [
+                1.0754854679107666,
+                0.2377641350030899,
+                1.077254295349121
+            ],
+            "min" : [
+                -1.077254295349121,
+                0.034240856766700745,
+                -1.077254295349121
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 4190,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 4190,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 6678,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 50280,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 50280,
+            "byteOffset" : 50280
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 33520,
+            "byteOffset" : 100560
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 13356,
+            "byteOffset" : 134080
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 147436,
+            "uri" : "myLogo8.bin"
+        }
+    ]
+}

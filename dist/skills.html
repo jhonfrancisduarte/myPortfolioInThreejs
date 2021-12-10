@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head><title>Skills</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/png" href="./logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skills.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        #my_image:hover{ opacity: 0.7; cursor: pointer;}
+        #my_image2:hover{ opacity: 0.7; cursor: pointer;}
+        #appear_image_div {
+            width: 100%; 
+            height: 100vh; 
+            position: fixed;
+            top: 0px; 
+            opacity: 0.5; 
+            background: #d8d8d8;
+            z-index: 5; 
+        }
+        #appear_image_div:before{
+            content: "x"; 
+            position:fixed; right: 450px; top: 40px;
+            color: black; 
+            font-family: "gadugi", sans-serif;
+            font-size: 30px;
+    
+        }
+        #appear_image_div:hover{
+            cursor: pointer;
+        }
+        #appear_image {
+            display: block; 
+            margin: auto; 
+            position: fixed; 
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            height: 500px;
+            z-index: 6; 
+        }
+    </style>
+    <script type="module" src="./skills.js"></script>
+
+    <script type="text/javascript">
+        jQuery(function($){
+            $('#my_image').click(function(){
+                var img = $(this).attr("src");
+                var appear_image = "<div id='appear_image_div' onClick='close_Image()'></div>";
+                appear_image = appear_image.concat("<img id='appear_image' src='"+img+"' />");
+                /*appear_image = appear_image.concat("<img id='close_image' onClick='close_Image()' />"); */
+                $('body').append(appear_image);
+            });
+        });
+        function close_Image(){
+            $('#appear_image_div').remove();
+            $('#appear_image').remove();
+            /*$('#close_image').remove(); */
+        }
+
+        jQuery(function($){
+            $('#my_image2').click(function(){
+                var img = $(this).attr("src");
+                var appear_image = "<div id='appear_image_div' onClick='close_Image()'></div>";
+                appear_image = appear_image.concat("<img id='appear_image' src='"+img+"' />");
+                $('body').append(appear_image);
+            });
+        });
+        function close_Image(){
+            $('#appear_image_div').remove();
+            $('#appear_image').remove();
+        }
+    </script> 
+    
+</head>
+<body text="white">
+
+    <div class="logo">
+        <img src="./logo2.png" height="60">
+    </div>
+
+        <div class="my-head"></div>
+        
+        <div class="navigator">
+            <ul>
+                <li class="list">
+                    <a href="index.html">
+                      <span class="icon"><ion-icon name="home-outline"></ion-icon>
+                          <span class="title"><p>Home</p></span>
+                      </span>
+                        
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="profile.html">
+                      <span class="icon"><ion-icon name="person-outline"></ion-icon>
+                          <span class="title2"><p>About Me</p></span>
+                      </span>
+                        
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="skills.html">
+                      <span class="icon"><ion-icon name="code-working-outline"></ion-icon>
+                          <span class="title3"><p>Skills</p></span>
+                      </span>
+                        
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="products.html">
+                      <span class="icon"><ion-icon name="albums-outline"></ion-icon>
+                          <span class="title4"><p>Works</p></span>
+                      </span>
+                        
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="contact.html">
+                      <span class="icon"><ion-icon name="mail-outline"></ion-icon>
+                          <span class="title5"><p>Contact</p></span>
+                      </span>
+                        
+                    </a>
+                </li>
+            </ul>
+          </div>
+
+        <div class="skills">
+
+            <div class="skilltext">
+                <div class="texts text1"><h1>S</h1></div>
+                <div class="texts text1"><h1>k</h1></div>
+                <div class="texts text1"><h1>i</h1></div>
+                <div class="texts text1"><h1>l</h1></div>
+                <div class="texts text1"><h1>l</h1></div>
+                <div class="texts text1"><h1>s</h1></div>
+            </div>
+            <br>
+
+            <div class="javascript anim">
+                <center><h1 id="javascript">Javascript</h1></center>
+                <center class="icon"><ion-icon name="logo-javascript"></ion-icon></center>
+                <p>I have enough knowledge in javascript to make my projects have move functionality and design. In this project I used imported javascript online modules like three.js and gsap.</p>
+                <p>I still have the minimum skills in javascript compared to other developer but as I go along with my study I can always learn and be competent in this programming language.</p>
+                <div class="container">
+                    <ul class="box">
+                        <li>
+                            <h5>Javascript (50%)</h5>
+                            <span class="bar bar1"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="photoshop anim">
+                <center><h1 id="photoshop">Photoshop</h1></center>
+                <center class="icon"><img src="images/photoshop.png" height="80px"></center>
+                <p>Photoshop is my number 1 platform in photo editing and graphics design. I have skills in editing photos like removing backgrounds, adjusting curves, embeding text in diffirent suffaces and many more.</p><br>
+                <pre>Original                                    Photoshopped</pre>
+                <div class="photoshopImg">
+                    <img class="img1" id="my_image" src="images/ps1.jpg" width="180">
+                    <img id="my_image2" src="images/ps2.jpg" width="180">
+                </div>
+                <div class="container">
+                    <ul class="box">
+                        <li>
+                            <h5>Photoshop (60%)</h5>
+                            <span class="bar bar2"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="html anim">
+                <center><h1 id="html">HTML</h1></center>
+                <center class="icon"><ion-icon name="logo-html5"></ion-icon></center>
+                <p>I have basic knowledge in HTML like tags, framesets, connecting html to css, javascript and php. I have created my first website named <a href="https://projectjad.netlify.app/?fbclid=IwAR15IO8R1oTcIV8ub0y1sfhSoEZ0cRHeEc4LVPjravJ7Hcf2L6djo93mP0k" target="_blank"><em>Project JAD</em></a>. This is my first website done with the minimum knowledge learned from school together with a bunch of self study from the internet. When it comes to building a project I'm always resourseful. </p>
+                <div class="container">
+                    <ul class="box">
+                        <li>
+                            <h5>HTML (90%)</h5>
+                            <span class="bar bar3"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="css anim">
+                <center><h1 id="css">CSS</h1></center>
+                <center class="icon"><ion-icon name="logo-css3"></ion-icon></center>
+                <p>CSS is my favorite part in creating a website. I always want to play with designs and animation to make my project more interactive with the user. </p>
+                <div class="div">
+                    <div class="box8"><p>J</p></div><br>
+                    <div class="box9"><p>F</p></div><br>
+                    <div class="box10"><p>A</p></div><br>
+                    <div class="box11"><p>D</p></div>
+                </div>
+                <div class="container">
+                    <ul class="box">
+                        <li>
+                            <h5>CSS (80%)</h5>
+                            <span class="bar bar4"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="php anim">
+                <center><h1 id="php">PHP</h1></center>
+                <center class="icon"><img src="images/php2.png" height="60px"></center>
+                <p>I have basic knowledge in PHP using the localhost PhpMyAdmin database platform and also with Microsoft Access. I also have experience in connecting my database to a website I created with the access of reading and writing/updating the data in my database.</p>
+                <a href="http://localhost/connecting%20to%20a%20database/index.php" target="_blank">
+                <p>http://localhost/connecting%20to%20a%20<br>database/index.php</p></a>
+                <p>However my PHP to database can be only accessible in localhost. A cloud database is not yet in my field of learnings.</p>
+                <div class="container">
+                    <ul class="box">
+                        <li>
+                            <h5>PHP (30%)</h5>
+                            <span class="bar bar5"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+            <div class="python anim">
+                <center><h1 id="python">Python</h1></center>
+                <center class="icon"><ion-icon name="logo-python"></ion-icon></center>
+                <p>In PYTHON programming, I have created a simple <em>Pacman</em> game. Pygame is really fun to make especially that I am a fan of logic. But still my learning pygame is only in the beginner face.</p>
+                <p>You can play my game at replit.com <a class="pacman" href="https://replit.com/@JhamaicaDuarte/DPacman?v=1" target="_blank"><strong>D'Pacman</strong></a></p>
+                <div class="container">
+                    <ul class="box">
+                        <li>
+                            <h5>Python (40%)</h5>
+                            <span class="bar bar6"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="java anim">
+                <center><h1 id="java">Java</h1></center>
+                <center class="icon"><img src="images/java2.png" height="70px"></center>
+                <p>In JAVA programming, Netbeans IDE kit is my main platform. I have skills in Object Oriented programming ( OOP ), Polymorphism, console programming like <em>Scanner</em> and <em>Bufferred reader</em> inputs. I also have knowledge in javac or the cmd java compilation and execution. Java Swing or Java GUI is also one of my expertise in Java programming.</p>
+                <div class="container">
+                    <ul class="box">
+                        <li>
+                            <h5>Java (50%)</h5>
+                            <span class="bar bar7"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="cpp anim">
+                <center><h1 id="cpp">C++</h1></center>
+                <center class="icon"><img src="images/cpp.png" height="50px"></center>
+                <p>I have basic knowledge in C language and C++. I studied C++ programming during the 1<sup>st</sup> year of college using the DEV C++ application as the main programming platform.</p>
+                <div class="container">
+                    <ul class="box">
+                        <li>
+                            <h5>C++ (30%)</h5>
+                            <span class="bar bar8"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="blender anim">
+                <center><h1 id="blender">Blender</h1></center>
+                <center class="icon"><img src="images/blender.png" height="50px"></center>
+                <p>Blender is an app that I'm focusing right now. I am becoming fond of creating 3D art. just like my head avatar in right side.</p>
+                <div class="container">
+                    <ul class="box">
+                        <li>
+                            <h5>Blender (45%)</h5>
+                            <span class="bar bar9"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <div class="guide">
+                <h5>move me:</h5>
+                <ul>
+                    <li>click and drag to rotate</li>
+                    <li>scroll up and down to zoom</li>
+                </ul>
+            </div>
+
+            <br><br><br><br>
+        </div>
+
+        
+
+<script>
+    const content = document.querySelectorAll('.anim');
+    observer = new IntersectionObserver((entries) =>{
+        entries.forEach(entry => {
+            if(entry.intersectionRatio > 0){
+               entry.target.style.animation = 'anim1 2s forwards ease-out';
+            }else{
+                entry.target.style.animation = 'none';
+            }
+        })
+
+    })
+    content.forEach(cont =>{
+        observer.observe(cont)
+    })
+</script>         
+
+
+
+<script>
+    let list = document.querySelectorAll('.list');
+    for (let i=0; i<list.length; i++){
+        list[i].onclick = function(){
+            let j =0;
+            while(j < list.length){
+                list[j++].className = 'list';
+            }
+            list[i].className = 'list active';
+        }
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

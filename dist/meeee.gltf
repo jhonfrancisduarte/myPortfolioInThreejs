@@ -1,0 +1,208 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Light",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                4.076245307922363,
+                5.903861999511719,
+                -1.0054539442062378
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "FaceBuilderHead"
+        },
+        {
+            "name" : "fbCamera",
+            "rotation" : [
+                0.014035440050065517,
+                0.7832077145576477,
+                -0.6213386654853821,
+                0.018082356080412865
+            ],
+            "translation" : [
+                2.183115005493164,
+                11.575703620910645,
+                -48.77597427368164
+            ]
+        },
+        {
+            "name" : "fbCamera.001",
+            "rotation" : [
+                0.6738895773887634,
+                0.02107175439596176,
+                0.0018724137917160988,
+                0.7385291457176208
+            ],
+            "translation" : [
+                0.2123481035232544,
+                0.7669026851654053,
+                7.131363868713379
+            ]
+        },
+        {
+            "name" : "fbCamera.002",
+            "rotation" : [
+                0.642453670501709,
+                -0.2878971993923187,
+                0.31830352544784546,
+                0.6348632574081421
+            ],
+            "translation" : [
+                -5.497192859649658,
+                0.01858915202319622,
+                5.061845302581787
+            ]
+        },
+        {
+            "name" : "fbCamera.003",
+            "rotation" : [
+                0.6385860443115234,
+                0.29824715852737427,
+                -0.34276241064071655,
+                0.6211042404174805
+            ],
+            "translation" : [
+                4.7004289627075195,
+                -0.07537440955638885,
+                3.9909379482269287
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "kt_facebuilder_material",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "FaceBuilderHead_mesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "kt_facebuilder_texture",
+            "uri" : "kt_facebuilder_texture.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 17071,
+            "max" : [
+                0.7641828060150146,
+                1.2732925415039062,
+                1.1750503778457642
+            ],
+            "min" : [
+                -0.7801322937011719,
+                -0.9402552247047424,
+                -0.7171929478645325
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 17071,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 17071,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 101778,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 204852,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 204852,
+            "byteOffset" : 204852
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 136568,
+            "byteOffset" : 409704
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 203556,
+            "byteOffset" : 546272
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 749828,
+            "uri" : "meeee.bin"
+        }
+    ]
+}

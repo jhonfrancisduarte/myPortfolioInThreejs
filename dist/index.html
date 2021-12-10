@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/png" href="./logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>duarte</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  </head>
+
+    <script type="module" src="./main.js"></script>
+
+<body>
+
+    <div class="logo">
+      <img src="./logo2.png" height="60">
+    </div>
+
+    <div class="navigator">
+      <ul>
+          <li class="list active">
+              <a href="index.html">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon>
+                    <span class="title"><p>Home</p></span>
+                </span>
+                  
+              </a>
+          </li>
+          <li class="list">
+              <a href="profile.html">
+                <span class="icon"><ion-icon name="person-outline"></ion-icon>
+                    <span class="title2"><p>About Me</p></span>
+                </span>
+                  
+              </a>
+          </li>
+          <li class="list">
+              <a href="skills.html">
+                <span class="icon"><ion-icon name="code-working-outline"></ion-icon>
+                    <span class="title3"><p>Skills</p></span>
+                </span>
+                  
+              </a>
+          </li>
+          <li class="list">
+              <a href="products.html">
+                <span class="icon"><ion-icon name="albums-outline"></ion-icon>
+                    <span class="title4"><p>Works</p></span>
+                </span>
+                  
+              </a>
+          </li>
+          <li class="list">
+              <a href="contact.html">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon>
+                    <span class="title5"><p>Contact</p></span>
+                </span>
+                  
+              </a>
+          </li>
+      </ul>
+    </div>
+
+    <div class="detail">
+      <h1><font color="white">Hi!</font></h1>
+      <div class="name">
+          <h1>I'm </h1>
+              <div class="names fname10"><h1>J</h1></div>
+              <div class="names fname1"><h1>h</h1></div>
+              <div class="names fname1"><h1>o</h1></div>
+              <div class="names fname11"><h1>n</h1></div>
+      
+              <div class="names fname2"><h1>F</h1></div>
+              <div class="names fname2"><h1>r</h1></div>
+              <div class="names fname2"><h1>a</h1></div>
+              <div class="names fname2"><h1>n</h1></div>
+              <div class="names fname2"><h1>c</h1></div>
+              <div class="names fname2"><h1>i</h1></div>
+              <div class="names fname22"><h1>s</h1></div>
+
+              <div class="names mname"><h1>A.</h1></div>
+
+              <div class="names lname"><h1>D</h1></div>
+              <div class="names lname"><h1>u</h1></div>
+              <div class="names lname"><h1>a</h1></div>
+              <div class="names lname"><h1>r</h1></div>
+              <div class="names lname"><h1>t</h1></div>
+              <div class="names lname"><h1>e</h1></div>
+      </div>
+      <p>Web Developer | Programmer | IT | Graphics Designer | Game Developer</p>
+      <a href="https://www.facebook.com/francis.duarte.319" target="newtab"><ion-icon name="logo-facebook"></ion-icon></a>&nbsp&nbsp&nbsp
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="newtab"><ion-icon name="mail-outline"></ion-icon></a>&nbsp&nbsp&nbsp
+        <a href="https://www.instagram.com/jhonfrancisduarte/ " target="newtab"><ion-icon name="logo-instagram"></ion-icon></a>
+        &nbsp&nbsp&nbsp
+        <a href="https://www.youtube.com/channel/UCDzjowV4oNJ_KEx2zJaMhYg" target="newtab"><ion-icon name="logo-youtube"></ion-icon></a>
+    </div>
+
+    
+<script>
+    let list = document.querySelectorAll('.list');
+    for (let i=0; i<list.length; i++){
+        list[i].onclick = function(){
+            let j =0;
+            while(j < list.length){
+                list[j++].className = 'list';
+            }
+            list[i].className = 'list active';
+        }
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+

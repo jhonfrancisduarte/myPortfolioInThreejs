@@ -1,0 +1,278 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%; height: 100vh;
+  overflow-x: hidden;
+}
+
+.logo{
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 15;
+}
+.logo:hover{
+  transform: scale(1.1);
+}
+
+.detail {
+  font-family: 'Exo 2', sans-serif;
+  color: aliceblue;
+  font-size: 50px;
+}
+
+.detail{
+  position: absolute; top: 0;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+.detail h1 {
+  font-size: 50px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.detail .name {
+  display: flex;
+}
+.detail .name .names{
+  display: flex;
+}
+
+.detail .name .names h1:hover{
+  transform: scale(1.5);
+  color:  rgb(0, 255, 221);
+  animation-name: names2;
+  animation-duration: 3s;
+}
+.detail .name .lname h1:hover{
+  transform: scale(1.5);
+  color:  rgb(255, 20, 118);
+  animation-name: names;
+  animation-duration: 3s;
+}
+@keyframes names{
+  0%   {color: rgb(255, 20, 118);}
+  50%  {transform: rotate(-45deg); color:  rgb(255, 20, 118);}
+  100% {color: rgb(255, 20, 118);}
+}
+@keyframes names2{
+  0%   {color: rgb(0, 255, 221);}
+  50%  {transform: rotate(-45deg); color:  rgb(0, 255, 221);}
+  100% {color: rgb(0, 255, 221);}
+}
+.detail .name .fname11,
+.detail .name .fname22,
+.detail .name .mname{
+  padding-right: 10px;
+}
+.detail .name .fname10{
+  padding-left: 20px;
+}
+.detail p{
+  font-size: 15px;
+}
+
+
+.navigator{
+  font-family: 'Exo 2', sans-serif;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  bottom: 150px;
+  height: 100%;
+  width: 65px;
+  box-sizing: initial;
+  align-content: center;
+  transition: width .5s;
+  overflow-x: hidden;
+  z-index: 10;
+}
+.navigator:hover{
+  width: 180px;
+}
+
+.navigator ul{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 180px;
+  padding-bottom: 50px;
+}
+.navigator ul li{
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+
+.navigator ul li.active .icon{
+  color: cyan;
+}
+.navigator ul li.active .title{
+  background: rgb(19, 255, 255);
+}
+.navigator ul li.active .title2{
+  background: rgb(19, 255, 255);
+}
+.navigator ul li.active .title3{
+  background: rgb(19, 255, 255);
+}
+.navigator ul li.active .title4{
+  background: rgb(19, 255, 255);
+}
+.navigator ul li.active .title5{
+  background: rgb(19, 255, 255);
+}
+
+.navigator ul li a{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+.navigator ul li a .icon{
+  position: relative;
+  display: block;
+  min-width: 50px;
+  height: 50px;
+  line-height: 70px;
+  text-align: center;
+}
+.navigator ul li a .icon:hover{
+  transform: scale(1.1);
+}
+.navigator ul li a .icon:hover .title,
+.navigator ul li a .icon:hover .title2,
+.navigator ul li a .icon:hover .title3,
+.navigator ul li a .icon:hover .title4,
+.navigator ul li a .icon:hover .title5{
+  opacity: 1;
+}
+
+.navigator ul li a .icon ion-icon{
+  font-size: 1.5em;
+}
+
+.detail a{
+  color: cyan;
+  font-size: 20px;
+}
+
+
+.navigator ul li a .title{ 
+  display: block;
+  width: 55px; 
+  height: 30px;
+  background: #cecece; 
+  color: black;
+  align-items:baseline;
+  text-align: center; 
+  justify-content: center;
+  border-radius: 8px; 
+  position: absolute; left: 50px; top: 0;
+  opacity: 0; 
+  transition: 0.6s opacity;
+  font-size: 13px;
+}
+.navigator ul li a  .title2{ 
+  display: block;
+  width: 75px; 
+  height: 30px;
+  background: #cecece; 
+  color: black;
+  align-items:baseline;
+  text-align: center; 
+  justify-content: center;
+  border-radius: 8px; 
+  position: absolute; left: 50px; top: 0;
+  opacity: 0; 
+  transition: 0.6s opacity;
+  font-size: 13px;
+}
+.navigator ul li a  .title3{ 
+  display: block;
+  width: 50px; 
+  height: 30px;
+  background: #cecece; 
+  color: black;
+  align-items:baseline;
+  text-align: center; 
+  justify-content: center;
+  border-radius: 8px; 
+  position: absolute; left: 50px; top: 0;
+  opacity: 0; 
+  transition: 0.6s opacity;
+  font-size: 13px;
+}
+.navigator ul li a  .title4{ 
+  display: block;
+  width: 57px; 
+  height: 30px;
+  background: #cecece; 
+  color: black;
+  align-items:baseline;
+  text-align: center; 
+  justify-content: center;
+  border-radius: 8px; 
+  position: absolute; left: 50px; top: 0;
+  opacity: 0; 
+  transition: 0.6s opacity;
+  font-size: 13px;
+}
+.navigator ul li a  .title5{ 
+  display: block;
+  width: 64px; 
+  height: 30px;
+  background: #cecece; 
+  color: black;
+  align-items:baseline;
+  text-align: center; 
+  justify-content: center;
+  border-radius: 8px; 
+  position: absolute; left: 50px; top: 0;
+  opacity: 0; 
+  transition: 0.6s opacity;
+  font-size: 13px;
+}
+
+.navigator ul li a  .title p,
+.navigator ul li a  .title2 p,
+.navigator ul li a  .title3 p,
+.navigator ul li a  .title4 p,
+.navigator ul li a  .title5 p{
+  position: absolute; top: -33px; left: 10px;
+  font-weight: bold;
+}
+  
+
+
+
+
+
+@media (max-width: 991px){
+  .name .names h1, .detail h1{
+      font-size: 18px;
+      position: relative; left: 0;
+  }
+  .name{
+    width: 200px;
+  }
+  .navigator{
+    position: fixed !important;
+    font-size: 12px;
+  }
+  .detail{
+    position: fixed; left: 6%; top: 25%;
+    padding-right: 300px;
+  }
+  .detail a{
+    font-size: 12px;
+  }
+
+}

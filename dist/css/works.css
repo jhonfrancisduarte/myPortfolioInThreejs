@@ -1,0 +1,52 @@
+.planeBG{
+    position: fixed; top: 0; ;left: 0;
+}
+.blender{
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    z-index: 8;
+}
+.blender p{
+    color: white;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+}
+.blender h4{
+    color: white;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    border-style: solid;
+    border-width: thin;
+    border-color: cyan;
+    text-align: center;
+    margin-top: 0;
+}
+.blender h4:hover{
+    background: rgba(15, 253, 253, .3);
+}
+.blender a{
+    text-decoration: none;
+}
+.header{
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.header h1{
+    font-family: 'roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+
+
+.object1{
+    position: relative;
+}
+.object2{
+    position: relative;
+}
