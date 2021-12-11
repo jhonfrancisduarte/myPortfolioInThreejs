@@ -427,3 +427,51 @@ pre{
   background-position: center;
 }
 
+.box {
+  z-index: 9;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: animate 50s linear infinite;
+}
+@keyframes animate{
+  0%{
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+.box:hover{
+  animation-play-state: paused;
+}
+
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent,#0004);
+}
+
+.box span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+}
+
+.box span img:hover{
+  -webkit-filter: none !important; 
+  filter: none !important;
+  cursor: pointer;
+}
