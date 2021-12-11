@@ -1,8 +1,9 @@
 import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js';
-import hoverEffect from './hover-effect'
+import * as tweenmax from 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js';
 
-var hoverDistort = new hoverEffect({
+
+var hoverDistort = new tweenmax.hoverEffect({
     parent: document.querySelector('.pic-wrapper'),
     intensity: 0.3,
     image1: 'images/pic1.jpg',
