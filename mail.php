@@ -1,15 +1,13 @@
 <?php
-$name = $_POST['name'];
-$email= $_POST['email'];
-$message= $_POST['message'];
-$to = "jhonfrancisduarte12345@gmail.com";
-$subject = "Mail from my website";
-$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
-$headers = "From: noreply@yoursite.com" . "\r\n" . "CC: " . $email;
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+if (isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $emailFrom = $_POST['email'];
+    $message = $_POST['message'];
+
+    $mailTo = "jhonfrancisduarte12345@gmail.com";
+    $headers = "From: " . $emailFrom;
+    $txt = "You have an email from ". $name . ".\n\n" . $message;
+    mail($mailTo, $txt, $headers);
+    header("Location: contact.html?mailsent");
 }
-//redirect
-//header("Location:thankyou.html");
-echo '<script>alert("Thank you for contacting me!")</script>';
 ?>
