@@ -59,9 +59,9 @@ document.body.appendChild(renderer.domElement)
 // const spaceTexture = new THREE.TextureLoader().load('images/galaxy.jpg');
 // scene.background = spaceTexture;
 
-const controls = new OrbitControls( camera, renderer.domElement );
-controls.maxDistance = 500;
-controls.update()
+// const controls = new OrbitControls( camera, renderer.domElement );
+// controls.maxDistance = 500;
+// controls.update()
 
 
 
@@ -76,35 +76,6 @@ scene.add(planeMesh)
 
 generatePlane()
 
-/* stars
-function addStar(){
-  const geometry = new THREE.SphereGeometry(0.15, 24, 24);
-  const material = new THREE.MeshStandardMaterial({color: 0xffffff})
-  const star = new THREE.Mesh( geometry,material );
-  
-
-  const [x,y,z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(500));
-  star.position.set(x,y,z);
-  scene.add(star)
-}
-Array(1000).fill().forEach(addStar)
-*/
-
-// stars
-// const particleGeo = new THREE.BufferGeometry();
-// const particleCount = 10000;
-// const posArray = new Float32Array(particleCount * 10);
-// for (let i=0; i < particleCount * 3; i++){
-//     posArray[i] = (Math.random() - 0.5) * 10000
-// }
-// const particleMaterial = new THREE.PointsMaterial({
-//     size: 0.05
-// }) 
-// particleGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-// const particleMesh = new THREE.Points(particleGeo, particleMaterial);
-// scene.add(particleMesh);
-
-
 // lighting of the plane
 const light = new THREE.DirectionalLight(0xffffff, 1)
 light.position.set( 0, 4, 1 )
@@ -112,12 +83,6 @@ scene.add(light)
 const backLight = new THREE.DirectionalLight(0xffffff, 1)
 backLight.position.set( 0, 0, -1 )
 scene.add(backLight)
-
-//const pointLight = new THREE.PointLight(0xffffff)
-//pointLight.position.set(30,30,0)
-//scene.add(pointLight)
-//const lightHelper = new THREE.PointLightHelper(light)
-//scene.add(lightHelper)
 
 //mouse movement
 const mouse = {
@@ -148,9 +113,6 @@ function animate() {
   //planeMesh.rotation.y = 0.15
   //planeMesh.rotation.z += 0.0005
   planeMesh.geometry.attributes.position.needsUpdate = true
-
-  // stars animation
-  particleMesh.rotation.y -= 0.0005
 
   const intersects = raycaster.intersectObject(planeMesh)
   if (intersects.length > 0){
