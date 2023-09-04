@@ -5,6 +5,12 @@ body{
   overflow-x: hidden;
 }
 
+.label {
+  position: fixed;
+  bottom: 0; left: 0;
+  padding: 8px;
+}
+
 .logo{
   position: fixed;
   top: 50px;
