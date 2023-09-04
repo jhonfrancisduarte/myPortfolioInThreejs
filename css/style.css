@@ -6,9 +6,17 @@ body{
 }
 
 .label {
-  position: fixed;
+  position: absolute;
   bottom: 0; left: 0;
-  padding: 8px;
+  color: white;
+  margin-left: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  z-index: 999;
+}
+
+.label a{
+  text-decoration: none;
 }
 
 .logo{
@@ -17,9 +25,7 @@ body{
   right: 50px;
   z-index: 15;
 }
-.logo:hover{
-  transform: scale(1.1);
-}
+
 
 .detail {
   font-family: 'Exo 2', sans-serif;

@@ -56,12 +56,12 @@ document.body.appendChild(renderer.domElement)
 
 
 //scene background image
-const spaceTexture = new THREE.TextureLoader().load('images/galaxy.jpg');
-scene.background = spaceTexture;
+// const spaceTexture = new THREE.TextureLoader().load('images/galaxy.jpg');
+// scene.background = spaceTexture;
 
-const controls = new OrbitControls( camera, renderer.domElement );
-controls.maxDistance = 500;
-controls.update()
+// const controls = new OrbitControls( camera, renderer.domElement );
+// controls.maxDistance = 500;
+// controls.update()
 
 
 
@@ -91,18 +91,18 @@ Array(1000).fill().forEach(addStar)
 */
 
 // stars
-const particleGeo = new THREE.BufferGeometry();
-const particleCount = 10000;
-const posArray = new Float32Array(particleCount * 10);
-for (let i=0; i < particleCount * 3; i++){
-    posArray[i] = (Math.random() - 0.5) * 10000
-}
-const particleMaterial = new THREE.PointsMaterial({
-    size: 0.05
-}) 
-particleGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-const particleMesh = new THREE.Points(particleGeo, particleMaterial);
-scene.add(particleMesh);
+// const particleGeo = new THREE.BufferGeometry();
+// const particleCount = 10000;
+// const posArray = new Float32Array(particleCount * 10);
+// for (let i=0; i < particleCount * 3; i++){
+//     posArray[i] = (Math.random() - 0.5) * 10000
+// }
+// const particleMaterial = new THREE.PointsMaterial({
+//     size: 0.05
+// }) 
+// particleGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+// const particleMesh = new THREE.Points(particleGeo, particleMaterial);
+// scene.add(particleMesh);
 
 
 // lighting of the plane

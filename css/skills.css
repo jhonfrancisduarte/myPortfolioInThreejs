@@ -12,11 +12,11 @@ body{background: rgb(33,40,42);
   
     font-family: 'roboto', sans-serif;
     font-weight:10;
-    height: inherit;
     width: 40%;
     position: absolute; top: 30px; left: 10%;
     padding-left: 100px;
     padding-bottom: 20px;
+    overflow-y: hidden;
     z-index: 3;
 }
 .skills p{
@@ -33,7 +33,7 @@ body{background: rgb(33,40,42);
 
 .skills .html{
   width: 400px;
-  height: 500px;
+  height: inherit;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -41,7 +41,7 @@ body{background: rgb(33,40,42);
 }
 .skills .cpp{
   width: 400px;
-  height: 500px;
+  height: inherit;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -49,7 +49,7 @@ body{background: rgb(33,40,42);
 }
 .skills .php{
   width: 400px;
-  height: inherit !important;
+  height: inherit;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -57,7 +57,7 @@ body{background: rgb(33,40,42);
 }
 .skills .python{
   width: 400px;
-  height: 500px;
+  height: inherit;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -65,7 +65,7 @@ body{background: rgb(33,40,42);
 }
 .skills .java{
   width: 400px;
-  height: 500px;
+  height: inherit;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -73,7 +73,7 @@ body{background: rgb(33,40,42);
 }
 .skills .javascript{
   width: 400px;
-  height: inherit !important;
+  height: inherit;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -81,7 +81,7 @@ body{background: rgb(33,40,42);
 }
 .skills .photoshop{
   width: 400px;
-  height: 670px;
+  height: inherit;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -89,7 +89,7 @@ body{background: rgb(33,40,42);
 }
 .skills .css{
   width: 400px;
-  height: inherit !important;
+  height: inherit;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -97,7 +97,7 @@ body{background: rgb(33,40,42);
 }
 .skills .blender{
   width: 400px;
-  height: inherit !important;
+  height: inherit;
   padding: 10px;
   color: white;
   border-radius: 5px;
