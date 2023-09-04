@@ -61,9 +61,10 @@ document.body.appendChild(renderer.domElement)
 const spaceTexture = new THREE.TextureLoader().load('images/galaxy.jpg');
 scene.background = spaceTexture;
 
-const controls = new OrbitControls( camera, renderer.domElement );
-controls.maxDistance = 500;
-controls.update()
+// Mouse control of the 3D plane background
+// const controls = new OrbitControls( camera, renderer.domElement );
+// controls.maxDistance = 500;
+// controls.update()
 
 
 
