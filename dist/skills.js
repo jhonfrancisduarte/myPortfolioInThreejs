@@ -28,7 +28,10 @@ const controls = new OrbitControls( camera, renderer.domElement );
 controls.minDistance = 1.8;
 controls.maxDistance = 8;
 controls.update()
-
+controls.addEventListener('change', () => {
+    // Log the camera's position whenever it changes
+    console.log(`Camera Position - X: ${camera.position.x}, Y: ${camera.position.y}, Z: ${camera.position.z}`);
+  });
 
 
 
